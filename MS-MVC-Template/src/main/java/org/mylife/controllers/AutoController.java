@@ -27,6 +27,7 @@ public class AutoController {
 	@RequestMapping(value="/newAuto.html", method=RequestMethod.GET)
 	public ModelAndView createAuto() {
 		Auto auto = new Auto();
+		
 		// Model Attibute is "form"
 		return new ModelAndView("newAuto", "form", auto);
 	}
@@ -35,6 +36,10 @@ public class AutoController {
 	@RequestMapping(value="/list.html", method=RequestMethod.GET)
 	public ModelAndView autos() {
 		List<Auto> allAutos =  autoData.findAll();
+		Auto auto = new Auto();
+		auto.setName("Mercedes");
+		auto.setDriver("Anya");
+		allAutos.add(auto);
 		// (viewName,modelName,Object)
 		return new ModelAndView("allAutos","autos",allAutos);
 	}
