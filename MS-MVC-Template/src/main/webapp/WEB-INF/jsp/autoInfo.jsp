@@ -1,3 +1,3 @@
-<h1>Vehicle Info for ${vehicle.name}</h1>
+<h1>Auto Info for ${auto.name}</h1>
 
-<p>The clock on this vehicle is ${vehicle.odometer}</p>
+<p>The Distance on this Auto is ${auto.odometer}</p>

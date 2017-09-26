@@ -41,8 +41,9 @@ public class AutoController {
 	
 	@RequestMapping(value="/auto/{name}")
 	public ModelAndView showAutoByName(@PathVariable("name") String name) {
-		
-		throw new UnsupportedOperationException();
+		// JPQL
+		Auto auto = autoData.findByName(name);
+		return new ModelAndView("autoInfo", "auto", auto);
 	}
 	
 
