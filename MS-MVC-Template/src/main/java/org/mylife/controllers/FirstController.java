@@ -16,7 +16,7 @@ public class FirstController {
 		
 		// return a new Instance of Model and View and pass a name of JSP file
 		//Without view resolver
-		return new ModelAndView("/WEB-INF/jsp/welcome.jsp","dateTime", dateTime);
+		return new ModelAndView("welcome","dateTime", dateTime);
 	}
 
 }
