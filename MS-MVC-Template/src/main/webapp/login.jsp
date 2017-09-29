@@ -17,8 +17,8 @@
 		</c:if>
 		
 		<form:form action="${loginUrl}" method="post">
-			<label>Username:</label> <input type="text" name="username" value="rac"/>
-			<label>Password:</label> <input type="text" name="password" value="secret"/>
+			<label>Username:</label> <input type="text" name="username" value="vimal"/>
+			<label>Password:</label> <input type="text" name="password" value="krishna"/>
 			<input type="submit"/>
 		</form:form>
 	</body>
