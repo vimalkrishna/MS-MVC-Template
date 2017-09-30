@@ -7,7 +7,7 @@
 	</head>		
 
 	<body>
-	
+	 
 		<h1><strong>Welcome to Autohouse</strong></h1>
 						
 		<c:url value="/login" var="loginUrl"/>
